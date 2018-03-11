@@ -1,4 +1,4 @@
-# React+Redux starter app
+# React+Redux starter app [![Build Status][travis-image]][travis-url]
 
 Starter application/kit containing the minimum set of frameworks/libraries/technologies to start working with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
 
@@ -46,3 +46,6 @@ There is a big chance this project does not fulfill your needs. We recommend the
 2. [react slingshot](https://github.com/coryhouse/react-slingshot)
 
 Both of them have been here for some time and have very nice communities and support. Please, chech those out!
+
+[travis-url]: https://travis-ci.org/MakingSense/react-redux-starter-app
+[travis-image]: https://travis-ci.org/MakingSense/react-redux-starter-app.svg?branch=master
