@@ -1,0 +1,60 @@
+{
+  "name": "react-redux-starter-app",
+  "version": "0.9.0",
+  "description": "React+Redux",
+  "homepage": "https://github.com/MakingSense/react-redux-starter-app",
+  "keywords": [
+    "react",
+    "redux"
+  ],
+  "bugs": {
+    "url": "https://github.com/MakingSense/react-redux-starter-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakingSense/react-redux-starter-app.git"
+  },
+  "author": "Making Sense",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --config webpack.config.js",
+    "prestart": "npm run lint && npm run test && npm run clean",
+    "start": "webpack-dev-server --open",
+    "lint": "eslint --ext .js --ext .jsx ./app",
+    "test": "jest"
+  },
+  "dependencies": {
+    "history": "4.7.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.7",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "5.0.0-alpha.9",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-jest": "22.4.1",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.18.2",
+    "eslint-loader": "2.0.0",
+    "eslint-plugin-react": "7.7.0",
+    "html-webpack-plugin": "2.30.1",
+    "jest": "22.4.2",
+    "redux-devtools-extension": "2.13.2",
+    "redux-mock-store": "1.5.1",
+    "rimraf": "2.6.2",
+    "sinon": "4.4.2",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.1"
+  }
+}
