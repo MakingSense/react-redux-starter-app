@@ -34,8 +34,36 @@ npm install
 
 ## Run
 
+For development you can simple type:
+
 ```bash
 npm start
+```
+
+## Build
+
+For production deployments:
+
+```bash
+npm run build
+```
+
+## Validate
+
+Whether you run `start` or `build` scripts both will execute first a `validation` script which is in charge of running the linting and testing validations.
+
+You can run them in isolation too:
+
+```bash
+npm run validate
+```
+
+```bash
+npm run lint
+```
+
+```bash
+npm test
 ```
 
 ## Alternatives
