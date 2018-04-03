@@ -22,7 +22,6 @@ Tech | Insights
 [webpack](https://webpack.js.org/) | Bundle all the assets.
 [Jest](https://facebook.github.io/jest/) | Testing framework.
 [Enzyme](https://github.com/airbnb/enzyme) | Testing utilities.
-[Sinon.JS](http://sinonjs.org/) | Testing utilities (spies, stubs and mocks).
 [ESLint](https://eslint.org/) | Linting utility.
 [EditorConfig](http://editorconfig.org/) | Define file formats and coding styles for all Editors/IDEs.
 
