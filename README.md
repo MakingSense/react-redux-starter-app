@@ -51,11 +51,11 @@ npm run build
 
 Whether you run `start` or `build` scripts both will execute first a `validation` script which is in charge of running the linting and testing validations.
 
-You can run them in isolation too:
-
 ```bash
 npm run validate
 ```
+
+You can run them in isolation too:
 
 ```bash
 npm run lint
