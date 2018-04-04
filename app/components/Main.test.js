@@ -6,17 +6,17 @@ function setup(props) {
   return shallow(<Main {...props} />);
 }
 
-const component = '<Main />';
+describe('<Main /> component', () => {
+  it('renders itself', () => {
+    const wrapper = setup({
+      actions: {}
+    });
 
-test(`${component} renders itself`, () => {
-  const wrapper = setup({
-    actions: {}
+    expect(wrapper.find('Switch')).toHaveLength(1);
+    expect(wrapper.find('PrivateRoute')).toHaveLength(1);
+    expect(wrapper.find('Route')).toHaveLength(2);
+
+    expect(wrapper.find('Header')).toHaveLength(1);
+    expect(wrapper.find('Footer')).toHaveLength(1);
   });
-
-  expect(wrapper.find('Switch')).toHaveLength(1);
-  expect(wrapper.find('PrivateRoute')).toHaveLength(1);
-  expect(wrapper.find('Route')).toHaveLength(2);
-
-  expect(wrapper.find('Header')).toHaveLength(1);
-  expect(wrapper.find('Footer')).toHaveLength(1);
 });

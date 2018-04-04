@@ -6,9 +6,9 @@ function setup(props) {
   return shallow(<PrivateRoute {...props} />);
 }
 
-const component = '<PrivateRoute />';
-
-test(`${component} renders itself`, () => {
-  const wrapper = setup();
-  expect(wrapper.find('Route')).toHaveLength(1);
+describe('<PrivateRoute /> component', () => {
+  it('renders itself', () => {
+    const wrapper = setup();
+    expect(wrapper.find('Route')).toHaveLength(1);
+  });
 });

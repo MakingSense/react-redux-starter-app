@@ -6,18 +6,18 @@ function setup(props) {
   return shallow(<NotFoundPage {...props} />);
 }
 
-const component = '<NotFoundPage />';
+describe('<NotFoundPage /> component', () => {
+  it('renders itself', () => {
+    const wrapper = setup();
 
-test(`${component} renders itself`, () => {
-  const wrapper = setup();
+    expect(wrapper.find('section')).toHaveLength(1);
 
-  expect(wrapper.find('section')).toHaveLength(1);
+    const subtitle = wrapper.find('h2');
+    expect(subtitle).toHaveLength(1);
+    expect(subtitle.text()).toBe('Page not found');
 
-  const subtitle = wrapper.find('h2');
-  expect(subtitle).toHaveLength(1);
-  expect(subtitle.text()).toBe('Page not found');
-
-  const goBackHome = wrapper.find('Link');
-  expect(goBackHome).toHaveLength(1);
-  expect(goBackHome.props().to).toBe('/');
+    const goBackHome = wrapper.find('Link');
+    expect(goBackHome).toHaveLength(1);
+    expect(goBackHome.props().to).toBe('/');
+  });
 });

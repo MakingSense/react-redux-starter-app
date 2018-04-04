@@ -6,18 +6,18 @@ function setup(props) {
   return shallow(<App {...props} />);
 }
 
-const component = '<App />';
+describe('<App /> component', () => {
+  it('renders itself', () => {
+    const wrapper = setup({
+      store: {
+        subscribe: function () { },
+        dispatch: function () { },
+        getState: function () { }
+      },
+      history: {}
+    });
 
-test(`${component} renders itself`, () => {
-  const wrapper = setup({
-    store: {
-      subscribe: function () { },
-      dispatch: function () { },
-      getState: function () { }
-    },
-    history: {}
+    expect(wrapper.find('Provider')).toHaveLength(1);
+    expect(wrapper.find('ConnectedRouter')).toHaveLength(1);
   });
-
-  expect(wrapper.find('Provider')).toHaveLength(1);
-  expect(wrapper.find('ConnectedRouter')).toHaveLength(1);
 });
