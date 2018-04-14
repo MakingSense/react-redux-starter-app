@@ -5,10 +5,6 @@ import { bindActionCreators } from 'redux';
 import * as authActions from '../../../actions/authActions';
 
 export class HomePage extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
   render() {
     return (
       <section>

@@ -12,10 +12,6 @@ import Header from './pages/partials/header/Header';
 import Footer from './pages/partials/footer/Footer';
 
 export class Main extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-  }
-
   render() {
     // TODO: Update to JSX fragments syntax once is offically supported by Enzyme and ESLint.
     // https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html
