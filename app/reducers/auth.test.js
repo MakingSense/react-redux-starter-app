@@ -27,7 +27,8 @@ describe('auth reducer', () => {
       authenticating: true,
       isAuthenticated: false,
       error: false,
-      errorMessage: null
+      errorMessage: null,
+      user: null
     });
   });
 
@@ -64,7 +65,8 @@ describe('auth reducer', () => {
       authenticating: false,
       isAuthenticated: false,
       error: true,
-      errorMessage: 'Unexpected error.'
+      errorMessage: 'Unexpected error.',
+      user: null
     });
   });
 });

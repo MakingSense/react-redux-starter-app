@@ -9,7 +9,8 @@ function auth(state = initialState.auth, action) {
           authenticating: true,
           isAuthenticated: false,
           error: false,
-          errorMessage: null
+          errorMessage: null,
+          user: null
         }
       );
 
@@ -30,7 +31,8 @@ function auth(state = initialState.auth, action) {
           authenticating: false,
           isAuthenticated: false,
           error: true,
-          errorMessage: action.message
+          errorMessage: action.message,
+          user: null
         }
       );
 
