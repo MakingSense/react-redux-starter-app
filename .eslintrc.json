@@ -9,11 +9,17 @@
     "eslint:recommended",
     "plugin:react/recommended"
   ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.6.0"
+    }
+  },
   "parserOptions": {
     "sourceType": "module",
+    "ecmaVersion": 9,
     "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
+      "jsx": true
     }
   },
   "rules": {
